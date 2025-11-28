@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #2b7cff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2b7cff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            color: #444;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2b7cff;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #2b7cff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ma Boutique</h1>
+    <p>Vendez facilement vos produits en ligne</p>
+</header>
+
+<nav>
+    <a href="#produits">Produits</a>
+    <a href="#infos">Informations</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- SECTION PRODUITS -->
+    <section id="produits">
+        <h2>Nos Produits</h2>
+        <div class="product-grid">
+
+            <!-- PRODUIT 1 -->
+            <div class="product">
+                <img src="image1.jpg" alt="Produit 1">
+                <h3>Nom du Produit</h3>
+                <p>Description rapide du produit.</p>
+                <p class="price">20 €</p>
+            </div>
+
+            <!-- PRODUIT 2 -->
+            <div class="product">
+                <img src="image2.jpg" alt="Produit 2">
+                <h3>Produit Exemple</h3>
+                <p>Description du produit. Vous pouvez modifier ce texte.</p>
+                <p class="price">35 €</p>
+            </div>
+
+            <!-- PRODUIT 3 -->
+            <div class="product">
+                <img src="image3.jpg" alt="Produit 3">
+                <h3>Autre Produit</h3>
+                <p>Description personnalisée.</p>
+                <p class="price">50 €</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION INFORMATIONS -->
+    <section id="infos" style="margin-top: 40px;">
+        <h2>Informations</h2>
+        <p>
+            Écrivez ici les informations importantes :  
+            conditions de vente, livraison, promotions, nouveautés…  
+            Vous pouvez modifier ce texte quand vous voulez.
+        </p>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" style="margin-top: 40px;">
+        <h2>Contact</h2>
+        <p>Email : <strong>exemple@mail.com</strong></p>
+        <p>Téléphone : <strong>00 00 00 00 00</strong></p>
+    </section>
+
+</div>
+
+<footer>
+    © 2025 - Ma Boutique
+</footer>
+
+</body>
+</html>
+
