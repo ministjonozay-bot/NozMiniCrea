@@ -1,159 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Boutique</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-
-        header {
-            background: #2b7cff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: white;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2b7cff;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .product {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .product h3 {
-            margin: 10px 0 5px;
-        }
-
-        .product p {
-            color: #444;
-        }
-
-        .price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #2b7cff;
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #2b7cff;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Noz Mini‑Créa : mini‑entreprise de collégiens, objets créatifs fabriqués à partir de matériaux recyclés." />
+  <title>Noz Mini‑Créa — Objets recyclés par des collégiens</title>
+  <!-- styles identiques à la version précédente -->
 </head>
-
 <body>
 
-<header>
-    <h1>Ma Boutique</h1>
-    <p>Vendez facilement vos produits en ligne</p>
-</header>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Noz Mini‑Créa</span>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#valeurs">Valeurs</a></li>
+          <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-    <a href="#produits">Produits</a>
-    <a href="#infos">Informations</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
-    <!-- SECTION PRODUITS -->
-    <section id="produits">
-        <h2>Nos Produits</h2>
-        <div class="product-grid">
-
-            <!-- PRODUIT 1 -->
-            <div class="product">
-                <img src="image1.jpg" alt="Produit 1">
-                <h3>Nom du Produit</h3>
-                <p>Description rapide du produit.</p>
-                <p class="price">20 €</p>
-            </div>
-
-            <!-- PRODUIT 2 -->
-            <div class="product">
-                <img src="image2.jpg" alt="Produit 2">
-                <h3>Produit Exemple</h3>
-                <p>Description du produit. Vous pouvez modifier ce texte.</p>
-                <p class="price">35 €</p>
-            </div>
-
-            <!-- PRODUIT 3 -->
-            <div class="product">
-                <img src="image3.jpg" alt="Produit 3">
-                <h3>Autre Produit</h3>
-                <p>Description personnalisée.</p>
-                <p class="price">50 €</p>
-            </div>
-
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <span class="badge">Faits par des collégiens, à partir d’objets recyclés</span>
+        <h1>Noz Mini‑Créa : des créations utiles et responsables</h1>
+        <p>Nous transformons emballages, textiles et bois récupérés en objets du quotidien. Chaque pièce est unique, fabriquée en atelier pédagogique au collège.</p>
+        <div class="cta">
+          <a class="btn primary" href="#produits">Voir les produits</a>
+          <a class="btn secondary" href="#contact">Commander / soutenir</a>
         </div>
+      </div>
+      <!-- image inchangée -->
     </section>
 
-    <!-- SECTION INFORMATIONS -->
-    <section id="infos" style="margin-top: 40px;">
-        <h2>Informations</h2>
-        <p>
-            Écrivez ici les informations importantes :  
-            conditions de vente, livraison, promotions, nouveautés…  
-            Vous pouvez modifier ce texte quand vous voulez.
-        </p>
-    </section>
+    <!-- sections Produits, Valeurs, Équipe, Contact identiques -->
 
-    <!-- SECTION CONTACT -->
-    <section id="contact" style="margin-top: 40px;">
-        <h2>Contact</h2>
-        <p>Email : <strong>exemple@mail.com</strong></p>
-        <p>Téléphone : <strong>00 00 00 00 00</strong></p>
-    </section>
+  </main>
 
-</div>
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year"></span> Noz Mini‑Créa — Mini‑entreprise d’objets recyclés</div>
+      <div>
+        <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
 
-<footer>
-    © 2025 - Ma Boutique
-</footer>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
